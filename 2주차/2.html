@@ -1,36 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>iframe 내부문서2</title>
-</head>
-<body>
-    <h1>자기소개</h1>
-    <p>이 문서는 두 번째 iframe 내부 문서입니다.</p>
-    <form action="http://218.144.127.125/submit" method="get">
-        이름을 입력해주세요: <br>
-        <input type="text" name:"name" placeholder="홍길동">
-        <p>
-        성별을 입력해주세요: <br>
-        <input type="radio" name="gender" value="m" checked>남자<br>
-        <input type="radio" name="gender" value="w">여자<br>
-        </p>
-        <p>
-        학번을 선택해주세요: <br>
-        <select name="num" size="2">
-            <option value="23" selected>23학번</option>
-            <option value="23">22학번</option>
-            <option value="23">21학번</option>
-            <option value="23">20학번</option>
-            <option value="23">19학번</option>
-        </select>
-     </p>
-        <input type="submit">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>iframe 내부문서2</title>
+    </head>
 
-    </form>
-    <h3>오늘 실습은 여기까지입니다 감사합니당!</h3>
+    <style>
+        body {
+            background-color: cadetblue;
+        }
+        
+    </style>
 
-</body>
+    <body>
+        <h1>자기소개</h1>
+        <p>이 문서는 두 번째 iframe 내부 문서입니다.</p>
+        <form action="http://218.144.127.125/submit" method="get">
+            이름을 입력해주세요: <br />
+            <input type="text" name:"name" placeholder="홍길동">
+            <p>
+                성별을 입력해주세요: <br />
+                <input type="radio" name="gender" value="m" checked />남자<br />
+                <input type="radio" name="gender" value="w" />여자<br />
+            </p>
+            <p>
+                학번을 선택해주세요: <br />
+                <select name="num" size="2">
+                    <option value="23" selected>23학번</option>
+                    <option value="23">22학번</option>
+                    <option value="23">21학번</option>
+                    <option value="23">20학번</option>
+                    <option value="23">19학번</option>
+                </select>
+            </p>
+            <input type="submit" />
+        </form>
+        <h3>오늘 실습은 여기까지입니다 감사합니당!</h3>
+    </body>
 </html>
