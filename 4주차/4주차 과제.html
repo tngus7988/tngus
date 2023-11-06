@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>CAPS따라하기</title>
+    </head>
+
+    <style>
+        body {
+            margin: 0px;
+        }
+        h1 {
+            height: 100px;
+            border: 5px navy;
+            color: navy;
+            text-align: center;
+        }
+
+        .con {
+            border: 3px solid skyblue;
+            margin: 50px;
+            padding: 30px;
+            text-align: left;
+            width: 250px;
+            float: left;
+        }
+
+        #menu01 {
+            width: 1500px;
+            height: 200px;
+            outline: 1px dotted gray;
+            background-color: lightblue;
+            position: fixed;
+            margin: 0%;
+            /* 이 div태그 위에 마진 없애고싶다...근데 안된다....... */
+        }
+        /* 
+        li {
+
+            float: left;
+            width: 20%;
+            height: 100%;
+            color: white;
+        }
+
+        a {
+            color: white;
+        }
+
+        a:hover {
+            color: pink;
+            background-color: black;
+        } */
+
+        #content {
+            padding: 2cqmax;
+            padding-left: 50px;
+        }
+
+        .image {
+            text-align: center;
+        }
+
+        img {
+            margin-top: 215px;
+            z-index: 1;
+        }
+
+        .dropdown {
+            position: relative;
+            display: flex;
+            justify-content: space-evenly;
+        }
+        .dropbtn {
+            color: white;
+            background-color: lightblue;
+            padding: 10px;
+            border: none;
+            cursor: pointer;
+        }
+        .drop_content {
+            display: none;
+            position: absolute;
+            float: left;
+            width: 30%;
+            height: 100%;
+            color: white;
+            min-width: 160px;
+        }
+        .drop_content a {
+            padding: 10%;
+            text-decoration: none;
+            display: block;
+            color: black;
+        }
+        .dropmenu:hover .drop_content {
+            display: block;
+            color: pink;
+            background-color: white;
+            z-index: 999;
+            text-decoration: underline;
+        }
+    </style>
+
+    <body>
+        <div id="menu01">
+            <h1>CAPS</h1>
+            <div class="image">
+                <img src="KakaoTalk_20231030_175244854.png" width="60%" height="20%" alt="CAPSZZANG" />
+            </div>
+
+            <!-- <ul>
+                <li><a href="a">ABOUT</a></li>
+                <li><a href="a">STUDY</a></li>
+                <li><a href="a">FORUM</a></li>
+                <li><a href="a">GALLERY</a></li>
+                <li><a href="a">UTIL</a></li>
+            </ul> -->
+            <div class="dropdown">
+                <div class="dropmenu">
+                    <button class="dropbtn">ABOUT</button>
+                    <div class="drop_content">
+                        <a href="#">항목 1</a>
+                        <a href="#">항목 2</a>
+                        <a href="#">항목 3</a>
+                    </div>
+                </div>
+
+                <div class="dropmenu">
+                    <button class="dropbtn">STUDY</button>
+                    <div class="drop_content">
+                        <a href="#">항목 1</a>
+                        <a href="#">항목 2</a>
+                        <a href="#">항목 3</a>
+                    </div>
+                </div>
+
+                <div class="dropmenu">
+                    <button class="dropbtn">FORUM</button>
+                    <div class="drop_content">
+                        <a href="#">항목 1</a>
+                        <a href="#">항목 2</a>
+                        <a href="#">항목 3</a>
+                    </div>
+                </div>
+
+                <div class="dropmenu">
+                    <button class="dropbtn">GALLERY</button>
+                    <div class="drop_content">
+                        <a href="#">항목 1</a>
+                        <a href="#">항목 2</a>
+                        <a href="#">항목 3</a>
+                    </div>
+                </div>
+
+                <div class="dropmenu">
+                    <button class="dropbtn">UTIL</button>
+                    <div class="drop_content">
+                        <a href="#">항목 1</a>
+                        <a href="#">항목 2</a>
+                        <a href="#">항목 3</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="content">
+            <p class="con" id="#1">
+                공지사항 <br />~~~~내용~~~~~~<br />
+                ~~~~내용~~~~~~<br />
+                ~~~~내용~~~~~~<br />
+            </p>
+            <p class="con" id="#2">
+                주저리 <br />
+                ~~~~내용~~~~~~ <br />
+                ~~~~내용~~~~~~<br />
+                ~~~~내용~~~~~~
+            </p>
+            <p class="con" id="#3">
+                스터디 게시판 <br />
+                ~~~~내용~~~~~~ <br />
+                ~~~~내용~~~~~~<br />
+                ~~~~내용~~~~~~
+            </p>
+            <p class="con" id="#4">
+                공지사항 <br />~~~~내용~~~~~~<br />
+                ~~~~내용~~~~~~<br />
+                ~~~~내용~~~~~~<br />
+            </p>
+            <p class="con" id="#5">
+                주저리 <br />
+                ~~~~내용~~~~~~ <br />
+                ~~~~내용~~~~~~<br />
+                ~~~~내용~~~~~~
+            </p>
+            <p class="con" id="#6">
+                스터디 게시판 <br />
+                ~~~~내용~~~~~~ <br />
+                ~~~~내용~~~~~~<br />
+                ~~~~내용~~~~~~
+            </p>
+        </div>
+    </body>
+</html>
