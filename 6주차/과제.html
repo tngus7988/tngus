@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Document</title>
+</head>
+
+<script>
+     let object = {
+          name: "장준혁",
+          say: "Hello World!",
+          src: "https://raw.githubusercontent.com/choigod1023/Making-Blog-Project/master/public/stylesheets/IMG_1348.jpeg"
+     };
+
+     function click1() {
+          let newH = document.createElement("h1");
+          newH.id = "afterClick";
+          newH.textContent = `${object.name}이 ${object.say}라고 말했대요 ~`;
+          document.body.appendChild(newH);
+
+          let newImage = document.createElement("img");
+          newImage.src = object.src;
+          newImage.style.height = "300px";
+          newImage.style.width = "200px";
+          document.body.appendChild(newImage);
+     };
+
+     let i = 0, j = 0;
+     let interval;
+     let Time;
+
+     function click2() {
+
+          let audio = new Audio('https://t1.daumcdn.net/cfile/tistory/99644A3C5CEA9DF014');
+
+          Time = document.createElement("h1");
+          Time.id = "loveyou";
+          document.body.appendChild(Time);
+
+          let myBody = document.querySelector("body");
+
+          interval = setInterval(function () {
+               Time.innerHTML = `${j}분 ${i}초`
+               i++;
+               if (i % 60 == 0) {
+                    myBody.style.backgroundColor = "red";
+                    audio.play();
+                    j++;
+                    i = 0;
+               }
+               else myBody.style.backgroundColor = "white";
+          }, 100);
+
+     };
+
+     function click3() {
+          clearInterval(interval);
+          let stop = document.querySelector("#loveyou");
+          stop.remove();
+          i = 0;
+     }
+
+
+</script>
+
+
+<body>
+     <button class="#1" onclick="click1()">불러오기</button>
+     <br><br><br>
+     <button class="#2" id="start" onclick="click2()">시작</button>
+     <button class="#2" id="end" onclick="click3()">종료</button>
+
+
+</body>
+
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>DOM구장</title>
+</head>
+<script>
+     function addSky() {
+
+          let obj = document.querySelector("#gocheok");
+          obj.innerHTML = "고척 스카이 돔"
+     }
+     function question() {
+          let obj2 = document.createElement("div");
+          obj2.id = "question";
+          obj2.innerHTML = "<h1>한국에는 돔구장이 얼마나 더 생길까요?</h1>";
+          const parent = document.querySelector("#domlist");
+          parent.appendChild(obj2);
+     }
+     function removesky() {
+          const obj3 = document.querySelector("#gocheok");
+          obj3.remove();
+     }
+</script>
+
+<body>
+     <div id="domlist">
+          <h1 id="gocheok" onmouseover="addSky()">고척돔</h1>
+          <h1 id="tokyo" onclick="removesky()">도쿄돔</h1>
+          <span class="japan">세이부돔</span>
+          <a class="japan" href="https://www.kyoceradome-osaka.jp/">교세라돔</a>
+          <button onclick="question()">장준혁의 의문점</button>
+     </div>
+</body>
+
+</html>
