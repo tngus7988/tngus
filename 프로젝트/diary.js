@@ -27,6 +27,7 @@ const renderCalendar = () => {
     let lastDayofMonth = new Date(currYear, currMonth, lastDateofMonth).getDay();
     let lastDateofLastMonth = new Date(currYear, currMonth, 0).getDate();
     let liTag = '';
+
     for (let i = firstDayofMonth; i > 0; i--) {
         liTag += `<li class="inactive" onclick="showMemoInput(${lastDateofLastMonth - i + 1})">${
             lastDateofLastMonth - i + 1
@@ -53,16 +54,13 @@ const showMemoInput = (day) => {
     const calender = document.querySelector('.calender');
     memoInput.style.display = 'block';
     memoButton.style.display = 'block';
-    memoInput.value = calender.getAttribute('data-content');
-    calender.setAttribute('data-month', currMonth);
-    calender.setAttribute('data-day', day);
 };
+
 const memoButton = document.getElementById('memoButton').addEventListener('click', () => {
     const memoInput = document.getElementById('memoInput');
     const calender = document.querySelector('.calender');
     memoInput.style.display = 'none';
     memoButton.style.display = 'none';
-    calender.setAttribute(`${currMonth}-${day}-data-content`, memoInput.value);
 });
 
 document.getElementById('month_left').addEventListener('click', () => {
