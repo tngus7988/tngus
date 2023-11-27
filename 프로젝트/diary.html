@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Project_diary</title>
+     <link rel="stylesheet" href="diary.css">
+     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+</head>
+
+<body>
+     <div class="wrapper">
+          <header>
+               <div class="nav">
+                    <button class="material-icons" id="month_left"> chevron_left </button>
+                    <p class="current-date">November 2023</p>
+                    <button class="material-icons" id="month_right"> chevron_right </span>
+               </div>
+          </header>
+          <div class="calendar">
+               <ul class="weeks">
+                    <li>Sun</li>
+                    <li>Mon</li>
+                    <li>Tue</li>
+                    <li>Wed</li>
+                    <li>Thu</li>
+                    <li>Fri</li>
+                    <li>Sat</li>
+               </ul>
+               <ul class="days">
+
+               </ul>
+          </div>
+     </div>
+     <div>
+          <textarea id="memoInput" rows="4" cols="50" placeholder="Write your memo..."></textarea>
+          <button id="memoButton">Save</button>
+     </div>
+     <script src="diary.js"></script>
+</body>
+
+</html>
