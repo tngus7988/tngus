@@ -56,11 +56,12 @@ const showMemoInput = (day) => {
     memoButton.style.display = 'block';
 };
 
-const memoButton = document.getElementById('memoButton').addEventListener('click', () => {
-    const memoInput = document.getElementById('memoInput');
+const memoButton = document.querySelector('#memoButton').addEventListener('click', () => {
+    let memoInput = document.querySelector('#memoInput');
+    let memoButton2 = document.querySelector('#memoButton');
     const calender = document.querySelector('.calender');
     memoInput.style.display = 'none';
-    memoButton.style.display = 'none';
+    memoButton2.style.display = 'none';
 });
 
 document.getElementById('month_left').addEventListener('click', () => {
